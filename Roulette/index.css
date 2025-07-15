@@ -1,0 +1,371 @@
+body{
+  overflow: hidden;
+  background-color: lightgray;
+  padding-left: 100px;
+  gap: 5px;
+  position: relative;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/036/594/492/large_2x/ai-generated-black-casino-background-with-copy-space-free-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.buttons{
+    width: 20px;
+}
+
+
+.bets{
+    width: 300px;
+    height: 120px;
+    position: relative;
+    left: 900px;
+    bottom: 50px;
+    color: white;
+}
+
+#money{
+    font-family: "Orbitron", sans-serif;
+    color: white;
+}
+
+#bet{
+    position: relative;
+    right: 85px;
+    font-family: "Orbitron", sans-serif;
+}
+
+#alert{
+    width: 600px;
+    position: relative;
+    left: 358px;
+    bottom: 125px;
+    font-family: "Orbitron", sans-serif;
+    text-align: left;
+    color: white;
+}
+
+#plusButton{
+    background-color: green;
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border: 2px solid green;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+}
+
+#plusButton:hover{
+    background-color: rgb(0, 70, 0);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border: 2px solid rgb(0, 70, 0);
+    border-radius: 3px;
+}
+
+#minusButton{
+    background-color: red;
+    color: white;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border: 2px solid red;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    right: 50px;
+}
+
+#minusButton:hover{
+    background-color: rgb(138, 0, 0);
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    border: 2px solid rgb(138, 0, 0);
+    border-radius: 3px;
+}
+
+.red {
+    background-color: red;
+    color: white;
+    width: 75px;
+    height: 75px;
+    font-size: 25px;
+    border: 2px solid red;
+    border-radius: 3px;
+    position: relative;
+    top: 109px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 1px;
+    margin-right: 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.red:hover {
+    background-color: rgb(138, 0, 0);
+    border: rgb(138, 0, 0);
+}
+
+.black {
+    background-color: black;
+    color: white;
+    width: 75px;
+    height: 75px;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 3px;
+    position: relative;
+    top: 109px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 1px;
+    margin-right: 1px;
+    cursor: pointer;
+}
+
+.black:hover {
+    background-color: rgb(55, 55, 55);
+    border: rgb(55, 55, 55);
+}
+
+.C {                            /*  green C1/C2/C3 buttons */
+   background-color: green;
+    color: white;
+    width: 125px;
+    height: 75px;
+    font-size: 25px; 
+    border: 2px solid green;
+    border-radius: 3px;
+    position: relative;
+    top: 109px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 1px;
+    margin-right: 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.C:hover {                            /*  green C1/C2/C3 buttons */
+   background-color: rgb(0, 70, 0);
+    border: rgb(0, 70, 0);
+}
+
+ #green{                     /*  green 0 button */
+    background-color: green;
+    color: white;
+    width: 75px;
+    height: 237px;
+    font-size: 25px;
+    border: 2px solid green;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+ #green:hover{                     /*  green 0 button */
+    background-color: rgb(0, 70, 0);
+    border: rgb(0, 70, 0);
+}
+
+#greenC {                  /*  green 0 div */
+  position: absolute;
+  left: 20px;
+  top: 432px;
+}
+
+.dozen {                    /*  green dozens buttons */
+    background-color: green;
+    color: white;
+    font-size: 25px; 
+    border: 2px solid green;
+    border-radius: 3px;
+    height: 75px;
+    width: 318px;
+    position: relative;
+    top: 109px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 1px;
+    margin-right: 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dozen:hover {                    /*  green dozens buttons */
+    background-color: rgb(0, 70, 0);
+    border: rgb(0, 70, 0);
+}
+
+.smallBtn{                /*  small green bet buttons */
+    background-color: green;
+    color: white;
+    font-size: 25px; 
+    border: 2px solid green;
+    border-radius: 3px;
+    width: 156px;
+    height: 75px;
+    position: relative;                    
+    top: 97px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 1px;
+    margin-right: 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.colorBtn{                /*  small green bet buttons (Only red/black) */
+    background-color: green;
+    color: white;
+    font-size: 50px; 
+    border: 2px solid green;
+    border-radius: 3px;
+    width: 156px;
+    height: 75px;
+    position: relative;                    
+    top: 109px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 1px;
+    margin-right: 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.colorBtn:hover, .smallBtn:hover{                /*  small green bet buttons (Only red/black) */
+    background-color: rgb(0, 70, 0);
+    border: rgb(0, 70, 0);
+}
+
+#roullete {       /* roullete wheel  */
+    width: 600px;
+    height: 600px;
+    position: relative;
+    bottom: 450px;
+    left: 1225px;
+}
+
+#roullete-arrow {         /* pointer arrow  */
+    width: 150px;
+    height: 150px;
+    position: relative;
+    bottom: 1130px;
+    left: 1450px;
+}
+
+.selected {
+    filter: brightness(0.4);
+}
+
+#roll{         /* roll button  */
+    position: relative;
+    bottom: 400px;
+    left: 865px;
+    width: 100px;
+    height: 50px;
+    background-color: green;
+    color: white;
+    font-size: 25px;
+    border: 2px solid green;
+    border-radius: 3px;
+    margin-left: 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+}
+
+#roll:hover{         /* roll button  */
+    background-color: rgb(0, 70, 0);
+    border: rgb(0, 70, 0);
+}
+
+.spin {
+  animation-duration: 15s;
+  animation-fill-mode: forwards;
+}
+
+.spinTo0  { animation-name: spinTo0; }
+.spinTo1  { animation-name: spinTo1; }
+.spinTo2  { animation-name: spinTo2; }
+.spinTo3  { animation-name: spinTo3; }
+.spinTo4  { animation-name: spinTo4; }
+.spinTo5  { animation-name: spinTo5; }
+.spinTo6  { animation-name: spinTo6; }
+.spinTo7  { animation-name: spinTo7; }
+.spinTo8  { animation-name: spinTo8; }
+.spinTo9  { animation-name: spinTo9; }
+.spinTo10 { animation-name: spinTo10; }
+.spinTo11 { animation-name: spinTo11; }
+.spinTo12 { animation-name: spinTo12; }
+.spinTo13 { animation-name: spinTo13; }
+.spinTo14 { animation-name: spinTo14; }
+.spinTo15 { animation-name: spinTo15; }
+.spinTo16 { animation-name: spinTo16; }
+.spinTo17 { animation-name: spinTo17; }
+.spinTo18 { animation-name: spinTo18; }
+.spinTo19 { animation-name: spinTo19; }
+.spinTo20 { animation-name: spinTo20; }
+.spinTo21 { animation-name: spinTo21; }
+.spinTo22 { animation-name: spinTo22; }
+.spinTo23 { animation-name: spinTo23; }
+.spinTo24 { animation-name: spinTo24; }
+.spinTo25 { animation-name: spinTo25; }
+.spinTo26 { animation-name: spinTo26; }
+.spinTo27 { animation-name: spinTo27; }
+.spinTo28 { animation-name: spinTo28; }
+.spinTo29 { animation-name: spinTo29; }
+.spinTo30 { animation-name: spinTo30; }
+.spinTo31 { animation-name: spinTo31; }
+.spinTo32 { animation-name: spinTo32; }
+.spinTo33 { animation-name: spinTo33; }
+.spinTo34 { animation-name: spinTo34; }
+.spinTo35 { animation-name: spinTo35; }
+.spinTo36 { animation-name: spinTo36; }
+
+@keyframes spinTo0  { 0%{transform:rotate(0deg);} 65%{transform:rotate(1440deg);} 85%{transform:rotate(1440deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo32 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1430.27deg);} 85%{transform:rotate(1430.27deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo15 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1420.54deg);} 85%{transform:rotate(1420.54deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo19 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1410.81deg);} 85%{transform:rotate(1410.81deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo4  { 0%{transform:rotate(0deg);} 65%{transform:rotate(1401.08deg);} 85%{transform:rotate(1401.08deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo21 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1391.35deg);} 85%{transform:rotate(1391.35deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo2  { 0%{transform:rotate(0deg);} 65%{transform:rotate(1381.62deg);} 85%{transform:rotate(1381.62deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo25 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1371.89deg);} 85%{transform:rotate(1371.89deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo17 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1362.16deg);} 85%{transform:rotate(1362.16deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo34 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1352.43deg);} 85%{transform:rotate(1352.43deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo6  { 0%{transform:rotate(0deg);} 65%{transform:rotate(1342.70deg);} 85%{transform:rotate(1342.70deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo27 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1332.97deg);} 85%{transform:rotate(1332.97deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo13 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1323.24deg);} 85%{transform:rotate(1323.24deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo36 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1313.51deg);} 85%{transform:rotate(1313.51deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo11 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1303.78deg);} 85%{transform:rotate(1303.78deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo30 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1294.05deg);} 85%{transform:rotate(1294.05deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo8  { 0%{transform:rotate(0deg);} 65%{transform:rotate(1284.32deg);} 85%{transform:rotate(1284.32deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo23 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1274.59deg);} 85%{transform:rotate(1274.59deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo10 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1264.86deg);} 85%{transform:rotate(1264.86deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo5  { 0%{transform:rotate(0deg);} 65%{transform:rotate(1255.14deg);} 85%{transform:rotate(1255.14deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo24 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1245.41deg);} 85%{transform:rotate(1245.41deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo16 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1235.68deg);} 85%{transform:rotate(1235.68deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo33 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1225.95deg);} 85%{transform:rotate(1225.95deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo1  { 0%{transform:rotate(0deg);} 65%{transform:rotate(1216.22deg);} 85%{transform:rotate(1216.22deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo20 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1206.49deg);} 85%{transform:rotate(1206.49deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo14 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1196.76deg);} 85%{transform:rotate(1196.76deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo31 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1187.03deg);} 85%{transform:rotate(1187.03deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo9  { 0%{transform:rotate(0deg);} 65%{transform:rotate(1177.30deg);} 85%{transform:rotate(1177.30deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo22 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1167.57deg);} 85%{transform:rotate(1167.57deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo18 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1157.84deg);} 85%{transform:rotate(1157.84deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo29 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1148.11deg);} 85%{transform:rotate(1148.11deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo7  { 0%{transform:rotate(0deg);} 65%{transform:rotate(1138.38deg);} 85%{transform:rotate(1138.38deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo28 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1128.65deg);} 85%{transform:rotate(1128.65deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo12 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1118.92deg);} 85%{transform:rotate(1118.92deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo35 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1109.19deg);} 85%{transform:rotate(1109.19deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo3  { 0%{transform:rotate(0deg);} 65%{transform:rotate(1099.46deg);} 85%{transform:rotate(1099.46deg);} 100%{transform:rotate(0deg);} }
+@keyframes spinTo26 { 0%{transform:rotate(0deg);} 65%{transform:rotate(1089.73deg);} 85%{transform:rotate(1089.73deg);} 100%{transform:rotate(0deg);} }
