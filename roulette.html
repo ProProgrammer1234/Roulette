@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolutte</title>
+    <link rel="stylesheet" href="roulette.css">
+    <link rel="shortcut icon" href="./images/Favicon.png">
+</head>
+<body>
+    <h1 id="money">Your Money:</h1>
+    <div class="bets">
+        <h1 id="bet">Current Bet: 500$</h1>
+        <button id="minusButton" onclick="decreaseBet()">-</button>
+        <button id="plusButton" onclick="increaseBet()">+</button>
+    </div>
+    <div id="greenC">
+        <button  id="green" onclick="playerPick(this, 0, 'Green', 'num')">0</button>
+    </div>
+    <div class="bets">
+        <h1 id="alert">Welcome to the Wheel of Fortune! Place your bet to begin.</h1>
+    </div>
+    <div>
+        <button class="red" onclick="playerPick(this, 3, 'Red', 'num')">3</button>
+        <button class="black" onclick="playerPick(this, 6, 'Black', 'num')">6</button>
+        <button class="red" onclick="playerPick(this, 9, 'Red', 'num')">9</button>
+        <button class="red" onclick="playerPick(this, 12, 'Red', 'num')">12</button>
+        <button class="black" onclick="playerPick(this, 15, 'Black', 'num')">15</button>
+        <button class="red" onclick="playerPick(this, 18, 'Red', 'num')">18</button>
+        <button class="red" onclick="playerPick(this, 21, 'Red', 'num')">21</button>
+        <button class="black" onclick="playerPick(this, 24, 'Black', 'num')">24</button>
+        <button class="red" onclick="playerPick(this, 27, 'Red', 'num')">27</button>
+        <button class="red" onclick="playerPick(this, 30, 'Red', 'num')">30</button>
+        <button class="black" onclick="playerPick(this, 33, 'Black', 'num')">33</button>
+        <button class="red" onclick="playerPick(this, 36, 'Red', 'num')">36</button>
+        <button class="C" onclick="playerPick(this, C1, 'Green', 'collumn')">C1</button>
+    </div>
+    <div>
+        <button class="black" onclick="playerPick(this, 2, 'Black', 'num')">2</button>
+        <button class="red" onclick="playerPick(this, 5, 'Red', 'num')">5</button>
+        <button class="black" onclick="playerPick(this, 8, 'Black', 'num')">8</button>
+        <button class="black" onclick="playerPick(this, 11, 'Black', 'num')">11</button>
+        <button class="red" onclick="playerPick(this, 14, 'Red', 'num')">14</button>
+        <button class="black" onclick="playerPick(this, 17, 'Black', 'num')">17</button>
+        <button class="black" onclick="playerPick(this, 20, 'Black', 'num')">20</button>
+        <button class="red" onclick="playerPick(this, 23, 'Red', 'num')">23</button>
+        <button class="black" onclick="playerPick(this, 26, 'Black', 'num')">26</button>
+        <button class="black" onclick="playerPick(this, 29, 'Black', 'num')">29</button>
+        <button class="red" onclick="playerPick(this, 32, 'Red', 'num')">32</button>
+        <button class="black" onclick="playerPick(this, 35, 'Black', 'num')">35</button>
+        <button class="C" onclick="playerPick(this, C2, 'Green', 'collumn')">C2</button>
+    </div>
+    <div>
+        <button class="red" onclick="playerPick(this, 1, 'Red', 'num')">1</button>
+        <button class="black" onclick="playerPick(this, 4, 'Black', 'num')">4</button>
+        <button class="red" onclick="playerPick(this, 7, 'Red', 'num')">7</button>
+        <button class="black" onclick="playerPick(this, 10, 'Black', 'num')">10</button>
+        <button class="black" onclick="playerPick(this, 13, 'Black', 'num')">13</button>
+        <button class="red" onclick="playerPick(this, 16, 'Red', 'num')">16</button>
+        <button class="red" onclick="playerPick(this, 19, 'Red', 'num')">19</button>
+        <button class="black" onclick="playerPick(this, 22, 'Black', 'num')">22</button>
+        <button class="red" onclick="playerPick(this, 25, 'Red', 'num')">25</button>
+        <button class="black" onclick="playerPick(this, 28, 'Black', 'num')">28</button>
+        <button class="black" onclick="playerPick(this, 31, 'Black', 'num')">31</button>
+        <button class="red" onclick="playerPick(this, 34, 'Red', 'num')">34</button>
+        <button class="C" onclick="playerPick(this, C3, 'Green', 'collumn')">C3</button>
+    </div>
+    <div>
+        <button class="dozen" onclick="playerPick(this, dozen1, 'Green', 'dozen')">1 - 12</button>
+        <button class="dozen" onclick="playerPick(this, dozen2, 'Green', 'dozen')">13 - 24</button>
+        <button class="dozen" onclick="playerPick(this, dozen3, 'Green', 'dozen')">25 - 36</button>
+    </div>
+    <div>
+        <button class="smallBtn" onclick="playerPick(this, small1, 'Green', 'smallBets')">1 - 18</button>
+        <button class="smallBtn" onclick="playerPick(this, small2, 'Green', 'smallBets')">EVEN</button>
+        <button class="colorBtn" onclick="playerPick(this, small3, 'Green', 'smallBets')">🟥</button>
+        <button class="colorBtn" onclick="playerPick(this, small4, 'Green', 'smallBets')">⬛</button>
+        <button class="smallBtn" onclick="playerPick(this, small5, 'Green', 'smallBets')">ODD</button>
+        <button class="smallBtn" onclick="playerPick(this, small6, 'Green', 'smallBets')">19 - 36</button>
+    </div>
+    <div>
+        <img src="./images/Picture3.png" id="roullete">
+        <button id="roll" onclick="spinWheel()">Roll</button>
+    </div>
+    <div>
+        <img src="./images/roullete-arrow.png" id="roullete-arrow">
+    </div>
+
+
+    <script src="roulette.js"></script>
+</body>
+</html>
